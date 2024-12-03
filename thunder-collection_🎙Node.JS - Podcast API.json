@@ -1,0 +1,118 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "🎙Node.JS - Podcast API",
+    "collectionId": "77abd03c-2f5f-4390-834e-2dbe4a9457f7",
+    "dateExported": "2024-12-03T18:49:22.285Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "aee03539-c5fb-456b-95b2-e8f2190a2e8e",
+            "name": "podcast-controller",
+            "containerId": "",
+            "created": "2024-12-02T17:30:52.996Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "cae1893a-4e47-4324-bb1b-41f570277735",
+            "colId": "77abd03c-2f5f-4390-834e-2dbe4a9457f7",
+            "containerId": "aee03539-c5fb-456b-95b2-e8f2190a2e8e",
+            "name": "List Episodes",
+            "url": "http://localhost:3333/api/list",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-12-02T17:31:07.547Z",
+            "modified": "2024-12-02T19:06:51.221Z",
+            "headers": []
+        },
+        {
+            "_id": "011cf48a-5448-46ef-a79d-1e5227bd413e",
+            "colId": "77abd03c-2f5f-4390-834e-2dbe4a9457f7",
+            "containerId": "aee03539-c5fb-456b-95b2-e8f2190a2e8e",
+            "name": "Filter PODCASTS",
+            "url": "http://localhost:3333/api/podcasts?p=ancapsu",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-12-02T19:06:33.092Z",
+            "modified": "2024-12-02T23:17:41.603Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "p",
+                    "value": "ancapsu",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "41465730-b347-4934-a79f-82fdfe7e35b4",
+            "colId": "77abd03c-2f5f-4390-834e-2dbe4a9457f7",
+            "containerId": "aee03539-c5fb-456b-95b2-e8f2190a2e8e",
+            "name": "CREATE PODCASTS",
+            "url": "http://localhost:3333/api/podcasts",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-12-02T22:29:54.421Z",
+            "modified": "2024-12-03T18:29:39.604Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"videoId\": \"teste\",\n    \"podcastName\": \"ancapsu\",\n    \"episode\": \"Lobby para controlar Elon Musk?\",\n    \"categories\": [\"política\", \"redes sociais\", \"informação descentralizada\"]\n  }",
+                "form": []
+            }
+        },
+        {
+            "_id": "6f18bb47-d5d4-4ad7-adf4-eb55f70f413e",
+            "colId": "77abd03c-2f5f-4390-834e-2dbe4a9457f7",
+            "containerId": "aee03539-c5fb-456b-95b2-e8f2190a2e8e",
+            "name": "UPDATE PODCASTS",
+            "url": "http://localhost:3333/api/podcasts",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-12-02T22:31:23.158Z",
+            "modified": "2024-12-03T18:32:19.819Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 14,\n  \"videoId\": \"teste\",\n  \"podcastName\": \"ancapsu\",\n  \"episode\": \"Lobby para controlar Elon Musk? Atualizado\",\n  \"categories\": [\n    \"política\",\n    \"tecnologia\",\n    \"informação descentralizada\"\n  ],\n  \"active\": true\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7ea15043-ed06-4005-86ba-3dbe856d1597",
+            "colId": "77abd03c-2f5f-4390-834e-2dbe4a9457f7",
+            "containerId": "aee03539-c5fb-456b-95b2-e8f2190a2e8e",
+            "name": "UPDATE PATCH PODCASTS",
+            "url": "http://localhost:3333/api/podcasts",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2024-12-02T22:32:38.126Z",
+            "modified": "2024-12-03T18:33:58.730Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"id\": 6,\r\n  \"categories\": [\r\n    \"esporte\",\r\n    \"corrida\",\r\n    \"segundo lugar\"\r\n  ]\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "33817325-0b19-4962-83c5-75077961d4bd",
+            "colId": "77abd03c-2f5f-4390-834e-2dbe4a9457f7",
+            "containerId": "aee03539-c5fb-456b-95b2-e8f2190a2e8e",
+            "name": "UPDATE PODCASTS",
+            "url": "http://localhost:3333/api/podcasts",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-12-02T22:33:02.592Z",
+            "modified": "2024-12-03T18:34:56.229Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"id\": 14\r\n}\r\n",
+                "form": []
+            }
+        }
+    ],
+    "ref": "1KMJmHNkPDwUtCk_gghAUyKfgGEtTRQUkgYq5GmLPdBwsszKMsdZzz-Hov0i3BS1mh5WfF28mfXoOXQZwotcPg"
+}
